@@ -42,9 +42,7 @@ const ErrorPage = ({ message, actionText, onAction }) => {
   const renderBodyText = () => {
     return (
       <Grid {...pageNotFoundStyles.bodyGridProps}>
-        <Typography {...pageNotFoundStyles.bodyProps}>
-          {message}
-        </Typography>
+        <Typography {...pageNotFoundStyles.bodyProps}>{message}</Typography>
       </Grid>
     );
   };
@@ -66,9 +64,7 @@ const ErrorPage = ({ message, actionText, onAction }) => {
   const renderTopContent = (title) => {
     return (
       <Grid {...pageNotFoundStyles.sectionGridProps}>
-        <Typography {...pageNotFoundStyles.midTitleProps}>
-          {title}
-        </Typography>
+        <Typography {...pageNotFoundStyles.midTitleProps}>{title}</Typography>
       </Grid>
     );
   };

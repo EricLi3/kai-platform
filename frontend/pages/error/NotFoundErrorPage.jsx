@@ -1,7 +1,7 @@
 import ErrorPage from './ErrorPage';
 
 const NotFoundPage = () => (
-  <ErrorPage 
+  <ErrorPage
     message="Oops, the page you are looking for does not exist. Let's get you back on track."
     actionText="Go to Homepage"
   />
