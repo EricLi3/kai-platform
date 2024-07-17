@@ -100,6 +100,7 @@ const SignInForm = (props) => {
       router.push(ROUTES.HOME);
     } catch ({ code }) {
       setError({ password: { message: AUTH_ERROR_MESSAGES[code] } });
+      handleOpenSnackBar(ALERT_COLORS.ERROR, AUTH_ERROR_MESSAGES[code]);
     } finally {
       setSignInLoading(false);
     }
