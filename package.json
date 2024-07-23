@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "firebase-tools": "^9.10.0"
+  },
+  "dependencies": {
+    "react-toastify": "^10.0.5"
   }
 }

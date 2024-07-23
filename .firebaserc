@@ -1,8 +1,6 @@
 {
   "projects": {
-    "default": "kainotifs",
-    "test": "kainotifs"
-
+    "default": "kai-ai-f63c8"
   },
   "targets": {
     "kai-ai-f63c8": {
