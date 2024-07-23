@@ -30,27 +30,27 @@ const AUTH_ERROR_MESSAGES = {
   [AUTH_ERR_CODES.EMAIL_ALREADY_IN_USE]: 'This email address is already in use',
 };
 
-const AUTH_CONTENT = {
-  LOGIN_SUCCESS: {
-    title: 'Login Successful!',
-    message: (userName) => `Login Successful!   👋 Welcome back! ${userName || 'Anonymous'}`,
-  },
-  LOGIN_FAILURE: {
-    title: 'Login Failed!',
-    message: (code) => AUTH_ERROR_MESSAGES[code],
-  },
-  SIGNUP_SUCCESS: {
-    title: 'Sign Up Successful!',
-    message: (userName) => `👋 Welcome to Kai! ${userName || 'Anonymous'}`,
-  },
-  SIGNUP_FAILURE: {
-    title: 'Sign Up Failed!',
-  },
-  EMAIL_VERIFICATION: {
-    title: 'Email Verification Required!',
-    message: 'Please check your inbox to verify your email.',
-  },
-};
+// const AUTH_CONTENT = {
+//   LOGIN_SUCCESS: {
+//     title: 'Login Successful!',
+//     message: (userName) => `Login Successful! 👋 Welcome back! ${userName || 'Anonymous'}`,
+//   },
+//   LOGIN_FAILURE: {
+//     title: 'Login Failed!',
+//     message: (code) => AUTH_ERROR_MESSAGES[code],
+//   },
+//   SIGNUP_SUCCESS: {
+//     title: 'Sign Up Successful!',
+//     message: (userName) => `👋 Welcome to Kai! ${userName || 'Anonymous'}`,
+//   },
+//   SIGNUP_FAILURE: {
+//     title: 'Sign Up Failed!',
+//   },
+//   EMAIL_VERIFICATION: {
+//     title: 'Email Verification Required!',
+//     message: 'Please check your inbox to verify your email.',
+//   },
+// };
 
 const VALIDATION_STATES = {
   DEFAULT: 'text',
@@ -81,7 +81,6 @@ export {
   FORGOT_PASSWORD_STEPS,
   AUTH_ERROR_MESSAGES,
   VALIDATION_STATES,
-  AUTH_CONTENT,
   AUTH_MODES,
   APP_ENV,
 };

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { Grid, Typography } from '@mui/material';
 
@@ -6,22 +6,19 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 import ToolsListingContainer from '@/components/ToolsListingContainer';
 
-import { AUTH_CONTENT } from '@/constants/auth';
-import ALERT_COLORS from '@/constants/notification';
+// import { AUTH_CONTENT } from '@/constants/auth';
+// import ALERT_COLORS from '@/constants/notification';
 
 import styles from './styles';
 
-import { AuthContext } from '@/providers/GlobalProvider';
+// import { AuthContext } from '@/providers/GlobalProvider';
 
 const HomePage = (props) => {
   const { data, loading } = props;
 
-  const { handleOpenSnackBar } = useContext(AuthContext);
-  ///////////////////////////////////////////////////////////////////////////////////////////////
   const { data: userData } = useSelector((state) => state.user);
   const router = useRouter();
   const userName = userData?.fullName;
@@ -75,13 +72,13 @@ const HomePage = (props) => {
     <>
       <ToastContainer />
       <Grid {...styles.mainGridProps}>
-      {renderTitle()}
-      <ToolsListingContainer
-        data={data}
-        loading={loading}
-        category="All Tools"
-      />
-    </Grid>
+        {renderTitle()}
+        <ToolsListingContainer
+          data={data}
+          loading={loading}
+          category="All Tools"
+        />
+      </Grid>
     </>
   );
 };

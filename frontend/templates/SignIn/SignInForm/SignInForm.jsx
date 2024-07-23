@@ -103,7 +103,11 @@ const SignInForm = (props) => {
       }); // Add query parameter
     } catch ({ code }) {
       setError({ password: { message: AUTH_ERROR_MESSAGES[code] } });
-      handleOpenSnackBar(ALERT_COLORS.ERROR, AUTH_ERROR_MESSAGES[code], ['top', 'center']);
+
+      handleOpenSnackBar(ALERT_COLORS.ERROR, AUTH_ERROR_MESSAGES[code], [
+        'top',
+        'center',
+      ]);
     } finally {
       setSignInLoading(false);
     }
