@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import ToolsListingContainer from '@/components/ToolsListingContainer';
 
